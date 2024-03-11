@@ -9,7 +9,6 @@ export const fetchProducts = createAsyncThunk(
       if (responses) {
         const data = await responses.json();
         productsData = data.products;
-        console.log(data, productsData, "data test");
       }
       return productsData;
     } catch (error) {

@@ -9,7 +9,7 @@ const productSlice = createSlice({
     builder
       .addCase(fetchProducts.fulfilled, (state, action) => {
         state.status = "success";
-        console.log(action.payload);
+
         state.data = action.payload;
       })
       .addCase(fetchProducts.pending, (state, action) => {
